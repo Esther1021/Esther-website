@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소아암 환우를 돕는 희망의 손길</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            margin-top: 0;
+        }
+        .product-category {
+            margin-bottom: 20px;
+        }
+        .product-category h2 {
+            background-color: #e7e7e7;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product-item {
+            width: 30%;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            text-align: center;
+        }
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+        .product-item h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .product-item p {
+            color: #555;
+        }
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .donate-form, .donation-list {
+            margin-top: 20px;
+        }
+        .donate-form input, .donate-form button {
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .donation-list table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .donation-list table, .donation-list th, .donation-list td {
+            border: 1px solid #ddd;
+        }
+        .donation-list th, .donation-list td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>소아암 환우를 돕는 희망의 손길</h1>
+    </header>
+
+    <div class="container">
+        <!-- 쇼핑몰 제품 카테고리 섹션 -->
+        <div class="product-category">
+            <h2>핸드폰 케이스</h2>
+            <div class="product">
+                <div class="product-item">
+                    <img src="phone_case1.jpg" alt="핸드폰 케이스 1">
+                    <h3>핸드폰 케이스 1</h3>
+                    <p>소아암 환우의 그림으로 디자인된 핸드폰 케이스입니다.</p>
+                    <p>가격: 15,000원</p>
+                    <button>구매하기</button>
+                </div>
+                <div class="product-item">
+                    <img src="phone_case2.jpg" alt="핸드폰 케이스 2">
+                    <h3>핸드폰 케이스 2</h3>
+                    <p>소아암 환우의 그림으로 디자인된 핸드폰 케이스입니다.</p>
+                    <p>가격: 15,000원</p>
+                    <button>구매하기</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-category">
+            <h2>가방</h2>
+            <div class="product">
+                <div class="product-item">
+                    <img src="bag1.jpg" alt="가방 1">
+                    <h3>가방 1</h3>
+                    <p>소아암 환우의 그림으로 디자인된 가방입니다.</p>
+                    <p>가격: 30,000원</p>
+                    <button>구매하기</button>
+                </div>
+                <div class="product-item">
+                    <img src="bag2.jpg" alt="가방 2">
+                    <h3>가방 2</h3>
+                    <p>소아암 환우의 그림으로 디자인된 가방입니다.</p>
+                    <p>가격: 30,000원</p>
+                    <button>구매하기</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-category">
+            <h2>컵</h2>
+            <div class="product">
+                <div class="product-item">
+                    <img src="cup1.jpg" alt="컵 1">
+                    <h3>컵 1</h3>
+                    <p>소아암 환우의 그림으로 디자인된 컵입니다.</p>
+                    <p>가격: 10,000원</p>
+                    <button>구매하기</button>
+                </div>
+                <div class="product-item">
+                    <img src="cup2.jpg" alt="컵 2">
+                    <h3>컵 2</h3>
+                    <p>소아암 환우의 그림으로 디자인된 컵입니다.</p>
+                    <p>가격: 10,000원</p>
+                    <button>구매하기</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 기부 페이지 섹션 -->
+        <div class="donate-form">
+            <h2>기부하기</h2>
+            <form action="/submit_donation" method="post">
+                <input type="text" name="name" placeholder="이름" required>
+                <input type="email" name="email" placeholder="이메일" required>
+                <input type="number" name="amount" placeholder="기부금액 (원)" required>
+                <button type="submit">기부하기</button>
+            </form>
+        </div>
+
+        <!-- 기부 내역 공개 페이지 섹션 -->
+        <div class="donation-list">
+            <h2>기부 내역 공개</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>기부자 이름</th>
+                        <th>기부 금액 (원)</th>
+                        <th>기부 일자</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>홍길동</td>
+                        <td>50,000</td>
+                        <td>2024-07-20</td>
+                    </tr>
+                    <tr>
+                        <td>김영희</td>
+                        <td>30,000</td>
+                        <td>2024-07-19</td>
+                    </tr>
+                    <!-- 더 많은 기부 내역을 추가할 수 있습니다. -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 소아암 환우를 돕는 희망의 손길. 모든 권리 보유.</p>
+    </footer>
+</body>
+</html>
